@@ -9,7 +9,7 @@ namespace Assignment03
             List<Book> books = new List<Book>();
 
             books.Add(new Book("1234", "Dot Net", new string[] { "Hussein", "Mahmoud" }, DateTime.Now, 100));
-            books.Add(new Book("5678", "NodeJs Net", new string[] { "Ahmed", "Tarek" }, DateTime.Now, 120));
+            books.Add(new Book("5678", "NodeJs", new string[] { "Ahmed", "Tarek" }, DateTime.Now, 120));
             books.Add(new Book("911", "PHP", new string[] { "Yara", "Sameh" }, DateTime.Now, 50));
 
             //a) Create User Defined Delegate with the same signature of methods existed in Bookfunctions class.
