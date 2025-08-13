@@ -95,6 +95,15 @@
         public static int Func01() { return 1; }
         public static string Func02(int x) { return $"{x}"; }
         public static void PrintHelloWorld() { Console.WriteLine("Hello World"); }
+        public static Action Func02()
+        {
+            Action action = PrintHelloWorld;
+            //Action actio2 = () => Console.WriteLine("Hello World2");
+            //Action action3 =  delegate ()  { Console.WriteLine("Hellow World3"); };
+            return action;
+        }
+
+        
         static void Main(string[] args)
         {
             #region Delegate Ex01
@@ -195,7 +204,19 @@
             //Enumerable.Where(Numbers, N => N%2 == 0);  
             #endregion
 
+            #region var keyword
+            //var x = 12;
+            //var predicate = ConditionsFunctions.CheckDivisableByFour;
+            //Console.WriteLine(predicate.Invoke(x)); //True
 
+            #endregion
+
+            #region Function Returns Function
+            //Action action = Func02();
+            //action.Invoke(); //Hello World
+            //Func02()(); //Hello World
+
+            #endregion
         }
     }
 }
